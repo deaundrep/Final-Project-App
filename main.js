@@ -63,3 +63,31 @@ document.getElementById("calculate").onclick = function() {
     timeElapsed = -1;
     tick()
     }
+
+let Bad = 0;
+let ok = 0;
+let Good = 0;
+
+function refreshResults () {
+  let results = document.getElementById('results');
+  results.innerHTML = 'total: ' + (Bad + ok + Good);
+  results.innerHTML += '<br />Bad: ' + Bad;
+  results.innerHTML += '<br />ok: ' + ok;
+  results.innerHTML += '<br />Good: ' + Good;
+}
+
+document.getElementById('Bad-button').addEventListener('click', function () {
+  Bad++;
+  refreshResults();
+});
+
+document.getElementById('ok-button').addEventListener('click', function () {
+  ok++;
+  refreshResults();
+});
+
+document.getElementById('Good-button').addEventListener('click', function () {
+  Good++;
+  refreshResults();
+});
+
