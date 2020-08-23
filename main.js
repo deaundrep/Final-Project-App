@@ -37,3 +37,29 @@ document.getElementById("calculate").onclick = function() {
     calculateTip();
 
     };
+
+    let timeElapsed = 0;
+    let timerID = -1;
+    function tick() {
+                timeElapsed++
+                document.getElementById("time").innerHTML = timeElapsed;
+            }
+
+    function start() {
+    if(timerID == -1){
+    timerID = setInterval(tick, 1000);
+    }
+    }
+
+    function stop() {
+    if(timerID != -1){
+    clearInterval(timerID)
+    timerID = -1
+    }
+    }
+
+    function reset() {
+    stop();
+    timeElapsed = -1;
+    tick()
+    }
