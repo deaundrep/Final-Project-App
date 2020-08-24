@@ -70,11 +70,13 @@ let Good = 0;
 
 function refreshResults () {
   let results = document.getElementById('results');
-  results.innerHTML = 'total: ' + (Bad + ok + Good);
-  results.innerHTML += '<br />Bad: ' + Bad;
-  results.innerHTML += '<br />ok: ' + ok;
-  results.innerHTML += '<br />Good: ' + Good;
+  results.innerHTML = ' Total Votes: ' + (Bad + ok + Good);
+  results.innerHTML += '<br />&#129314;: ' + Bad;
+  results.innerHTML += '<br />&#x1F928;: ' + ok;
+  results.innerHTML += '<br />&#x1F929;: ' + Good;
 }
+
+
 
 document.getElementById('Bad-button').addEventListener('click', function () {
   Bad++;
@@ -90,4 +92,5 @@ document.getElementById('Good-button').addEventListener('click', function () {
   Good++;
   refreshResults();
 });
+
 
