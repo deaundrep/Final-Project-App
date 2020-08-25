@@ -150,8 +150,8 @@ button :hover  {
     }
     
     p {
-        color: black;
-        font-size: 25px;
+        color:rgb(255, 174, 0);
+        font-size: 35px;
     }
     
     #time  {
@@ -271,7 +271,7 @@ button :hover  {
     
     p {
         color: black;
-        font-size: 25px;
+        font-size: 35px;
     }
     
     #time  {
