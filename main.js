@@ -1,10 +1,10 @@
 function calculateTip() {
     let billAmt = document.getElementById("billamt").value;
-    let serviceQual = document.getElementById("serviceQual").value;
+    let serviceQ = document.getElementById("serviceQ").value;
     let numOfPeople = document.getElementById("peopleamt").value;
 
     //validate input
-    if (billAmt === "" || serviceQual == 0) {
+    if (billAmt === "" || serviceQ == 0) {
     console.log("Please enter values")
     return;
     }
@@ -17,7 +17,7 @@ function calculateTip() {
     }
 
     //Calculate tip
-    let total = (billAmt * serviceQual) / numOfPeople;
+    let total = (billAmt * serviceQ) / numOfPeople;
     //round to two decimal places
     total = Math.round(total * 100) / 100;
     //next line allows us to always have two digits after decimal point
