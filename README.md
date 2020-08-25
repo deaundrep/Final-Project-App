@@ -33,7 +33,7 @@ This app factors in Waiting Time, How good were the Food / Drinks , your service
 ### Stretch Goals:
 
 1. Adjust the look and move app around using some css tricks.
-2. Add a clearAll function that clears the whole app.
+2. Add a clearAll functions that clears the whole app.
 3. Add refresh button that resets all functions to 0 or ' '.
 
 <<<<<<< HEAD

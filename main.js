@@ -44,20 +44,20 @@ document.getElementById("calculate").onclick = function() {
                 timeElapsed++
                 document.getElementById("time").innerHTML = timeElapsed;
             }
-
+//starts time 
     function start() {
     if(timerID == -1){
     timerID = setInterval(tick, 1000);
     }
     }
-
+//stops time
     function stop() {
     if(timerID != -1){
     clearInterval(timerID)
     timerID = -1
     }
     }
-
+//resets time
     function reset() {
     stop();
     timeElapsed = -1;
