@@ -36,7 +36,3 @@ This app factors in Waiting Time, How good were the Food / Drinks , your service
 2. Add a clearAll functions that clears the whole app.
 3. Add refresh button that resets all functions to 0 or ' '.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 079bef3b27d9c1e1e94b9616257af69db5962efc
